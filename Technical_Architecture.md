@@ -2,7 +2,7 @@
 
 ## 1. Introduction
 
-This document provides a high-level overview of the proposed technical architecture for the [Project Name]. The architecture is designed to be scalable, secure, and maintainable, using modern technologies and best practices.
+This document provides a high-level overview of the proposed technical architecture for the Mediverse. The architecture is designed to be scalable, secure, and maintainable, using modern technologies and best practices.
 
 ## 2. Architecture Diagram
 

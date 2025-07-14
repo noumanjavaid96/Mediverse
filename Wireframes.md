@@ -2,7 +2,7 @@
 
 ## 1. Introduction
 
-This document will house the wireframes and prototypes for the [Project Name]. Wireframes are basic visual guides that represent the skeletal framework of the application. They are a crucial step in the design process, allowing us to focus on layout, functionality, and user flow without being distracted by colors, fonts, or images.
+This document will house the wireframes and prototypes for the Mediverse. Wireframes are basic visual guides that represent the skeletal framework of the application. They are a crucial step in the design process, allowing us to focus on layout, functionality, and user flow without being distracted by colors, fonts, or images.
 
 ## 2. Process
 

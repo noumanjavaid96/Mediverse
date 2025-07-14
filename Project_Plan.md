@@ -1,8 +1,8 @@
-# Project Plan: [Project Name]
+# Project Plan: Mediverse
 
 ## 1. Introduction
 
-This document provides a high-level project plan for the [Project Name]. It includes a timeline, milestones, and deliverables. This plan is an estimate and will be refined upon completion of the Discovery Phase.
+This document provides a high-level project plan for the Mediverse. It includes a timeline, milestones, and deliverables. This plan is an estimate and will be refined upon completion of the Discovery Phase.
 
 ## 2. Project Timeline & Phases
 

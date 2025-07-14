@@ -1,8 +1,8 @@
-# Project Charter: [Project Name]
+# Project Charter: Mediverse
 
 ## 1. Project Overview
 
-**Project Name:** [Insert Project Name - e.g., "Patient Engagement & Practice Management Platform"]
+**Project Name:** Mediverse
 **Project Sponsor:** Dr. Osman
 **Project Lead (Client Side):** Salman
 **Project Lead (Vendor Side):** Numan (Discovery), Irtaza (Development)

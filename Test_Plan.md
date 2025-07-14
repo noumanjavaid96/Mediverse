@@ -1,8 +1,8 @@
-# Test Plan: [Project Name]
+# Test Plan: Mediverse
 
 ## 1. Introduction
 
-This document outlines the testing strategy for the [Project Name]. The goal of this test plan is to ensure that the application is of high quality, meets all business requirements, and provides a seamless user experience.
+This document outlines the testing strategy for the Mediverse. The goal of this test plan is to ensure that the application is of high quality, meets all business requirements, and provides a seamless user experience.
 
 ## 2. Testing Scope
 

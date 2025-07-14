@@ -1,8 +1,8 @@
-# Requirements Document: [Project Name]
+# Requirements Document: Mediverse
 
 ## 1. Introduction
 
-This document details the functional, non-functional, and technical requirements for the [Project Name]. It is based on the initial project kick-off meeting and the subsequent requirements provided by the client. This document will be refined and expanded during the discovery phase.
+This document details the functional, non-functional, and technical requirements for the Mediverse. It is based on the initial project kick-off meeting and the subsequent requirements provided by the client. This document will be refined and expanded during the discovery phase.
 
 ## 2. User Roles & Permissions
 
