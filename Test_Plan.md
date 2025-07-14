@@ -1,85 +1,54 @@
 # Test Plan: Mediverse
 
 ## 1. Introduction
-
-This document outlines the testing strategy for the Mediverse. The goal of this test plan is to ensure that the application is of high quality, meets all business requirements, and provides a seamless user experience.
+This document outlines the testing strategy for the Mediverse platform, focusing on ensuring quality for the multi-tenant architecture and the comprehensive feature set for all user roles.
 
 ## 2. Testing Scope
 
 ### 2.1 In-Scope
-
-*   **Functional Testing:** Testing all features and functionalities defined in the Requirements Document.
-*   **UI/UX Testing:** Ensuring the application matches the approved designs and is intuitive to use.
-*   **API Testing:** Testing all API endpoints for correctness, performance, and security.
-*   **Security Testing:** Testing for vulnerabilities, including those related to HIPAA compliance.
-*   **Performance Testing:** Testing the application's performance under load.
-*   **User Acceptance Testing (UAT):** Testing by the client to confirm the application meets their business needs.
-
-### 2.2 Out-of-Scope
-
-*   Testing of third-party applications (we will test the integration, but not the third-party app itself).
-*   Testing on unsupported browsers or operating systems.
+*   **Functional Testing:** End-to-end testing of all user stories for Patient, Doctor, Hospital Admin, and Super Admin roles.
+*   **Multi-Tenancy Testing:** Specific testing to ensure data isolation between tenants.
+*   **API Testing:** All API endpoints, including performance, security, and tenant data access rules.
+*   **Third-Party Integration Testing:** Testing integrations with Agora, Stripe/PayPal, RxNorm, etc.
+*   **Security & Compliance Testing:** Vulnerability scanning, penetration testing (post-MVP), and testing against HIPAA compliance requirements.
+*   **User Acceptance Testing (UAT):** Client-led testing to validate business workflows.
 
 ## 3. Testing Levels
+1.  **Unit Testing:** Developers will write unit tests for all backend and frontend components.
+2.  **Integration Testing:** QA will test the interaction between microservices and with third-party APIs.
+3.  **System Testing:** End-to-end testing of the complete system by QA.
+4.  **UAT:** Carried out by the client (Salman's team) to ensure business requirements are met.
 
-1.  **Unit Testing:**
-    *   **Responsibility:** Developers
-    *   **Description:** Testing individual functions and components in isolation.
-2.  **Integration Testing:**
-    *   **Responsibility:** Developers & QA
-    *   **Description:** Testing the interaction between different modules and services.
-3.  **System Testing:**
-    *   **Responsibility:** QA
-    *   **Description:** End-to-end testing of the complete, integrated system.
-4.  **User Acceptance Testing (UAT):**
-    *   **Responsibility:** Client (Salman and team)
-    *   **Description:** The client will perform testing to confirm that the application is acceptable for release.
+## 4. High-Level Test Scenarios
 
-## 4. Test Case Management
+### 4.1 Multi-Tenancy
+*   Verify that a Hospital Admin from Hospital A cannot see any data (doctors, patients, appointments) from Hospital B.
+*   Verify that a Super Admin can see data across all tenants.
+*   Verify that a search performed by a user in Tenant A does not return results from Tenant B.
 
-*   All test cases will be documented and managed in a test case management tool (e.g., TestRail, Zephyr, or a shared document).
-*   Each test case will include:
-    *   Test Case ID
-    *   Description
-    *   Pre-conditions
-    *   Steps to Reproduce
-    *   Expected Result
-    *   Actual Result
-    *   Status (Pass/Fail)
+### 4.2 Patient Portal
+*   Verify the end-to-end appointment booking and payment flow.
+*   Verify that a patient can successfully join a telehealth session.
+*   Verify that a patient can view their own EHR data but not others'.
 
-## 5. High-Level Test Cases
+### 4.3 Doctor Portal
+*   Verify that a doctor can create and edit an encounter note, and it is saved correctly.
+*   Verify the e-prescribing workflow, including searching for a drug from RxNorm.
+*   Verify that a doctor's availability changes are reflected in the patient booking portal in real-time.
 
-This is a non-exhaustive list of high-level test scenarios. Detailed test cases will be derived from the user stories.
+### 4.4 Hospital Admin Portal
+*   Verify that a Hospital Admin can successfully onboard a new doctor.
+*   Verify that a custom booking link correctly filters the list of doctors for the patient.
 
-### 5.1 Call Center / PBX Integration
-*   Verify that a call pop-up appears when a known patient calls.
-*   Verify that call recordings are saved and accessible.
+### 4.5 Super Admin Portal
+*   Verify that a Super Admin can successfully onboard a new hospital.
+*   Verify that subscription management changes are correctly applied to a tenant.
 
-### 5.2 Review Management
-*   Verify that a review request is sent after a completed appointment.
-*   Verify that a user can successfully post a review to Google/Facebook.
-
-### 5.3 AI Use Cases
-*   Verify that the AI scheduling suggests logical appointment times.
-*   Verify that smart notifications are sent at the correct times.
-
-### 5.4 Insurance Eligibility Verification
-*   Verify that the system correctly identifies a patient's insurance as active or inactive.
-
-### 5.5 Security
-*   Verify that a user can only access data they are authorized to see based on their role.
-*   Verify that patient data is not exposed in API responses.
-
-## 6. Defect Management
-
-*   Defects will be tracked in a bug tracking system (e.g., Jira, Monday.com).
-*   Each defect will be assigned a priority (Critical, High, Medium, Low).
-*   Critical and High priority bugs must be fixed before a release.
-
-## 7. Entry/Exit Criteria
-
-*   **Entry Criteria (for QA testing):** A feature is considered "code complete" and unit tests are passing.
-*   **Exit Criteria (for release):**
-    *   All critical and high priority bugs are closed.
-    *   All test cases have been executed and the pass rate is above 95%.
-    *   The client has provided sign-off from UAT.
+## 5. Defect Management
+*   **Tool:** Jira or a similar bug tracking system.
+*   **Priority Levels:**
+    *   **P0 - Blocker:** Prevents major functionality; no workaround. Must be fixed within 24 hours.
+    *   **P1 - Critical:** Major functionality is broken, but a workaround exists.
+    *   **P2 - Major:** A feature is not working as expected.
+    *   **P3 - Minor:** UI issues or other minor bugs.
+*   **Exit Criteria for MVP:** All P0 and P1 bugs must be resolved. Over 95% of P2 bugs must be resolved.

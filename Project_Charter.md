@@ -5,86 +5,84 @@
 **Project Name:** Mediverse
 **Project Sponsor:** Dr. Osman
 **Project Lead (Client Side):** Salman
-**Project Lead (Vendor Side):** Numan (Discovery), Irtaza (Development)
+**Project Lead (Vendor Side):** Muhammad Hamza
 **Date Prepared:** [Date]
 
-This document formally authorizes the project to create a comprehensive Patient Engagement and Practice Management Platform. The project's primary goal is to enhance patient experience, streamline administrative workflows, and provide a robust, scalable platform for future growth.
+This document formally authorizes the Mediverse project. Mediverse will be a multi-tenant SaaS platform designed to support hospital systems in delivering efficient, modern healthcare services. It will feature built-in EHR, telehealth, and e-prescribing capabilities, with secure, isolated environments for each hospital tenant. The immediate goal is to deliver a fully functional Minimum Viable Product (MVP) by September 1st.
 
 ## 2. Project Objectives
 
-*   **Improve Patient Engagement:** Create a seamless and modern digital experience for patients, from appointment scheduling to post-visit feedback.
-*   **Increase Administrative Efficiency:** Automate routine tasks, provide real-time information to staff, and reduce manual workload through intelligent workflows.
-*   **Enhance Practice Competitiveness:** Leverage modern technology, including AI and marketing automation, to improve patient retention and attract new patients.
-*   **Ensure Data Security & Compliance:** Build a secure platform that adheres to all relevant data privacy regulations (e.g., HIPAA).
+*   **Deliver MVP by September 1st:** Launch a core set of features that provide immediate utility and allow for the onboarding of initial hospital systems.
+*   **Enable Multi-Tenancy:** Build a scalable architecture that securely supports multiple hospital systems, each with their own isolated data and user base.
+*   **Provide Seamless User Experience:** Create an intuitive and efficient platform for all user roles: Super Admins, Hospital Admins, Doctors, and Patients.
+*   **Ensure Compliance and Security:** Adhere to all relevant healthcare regulations, including HIPAA, and ensure the highest level of data security.
 
 ## 3. Scope
 
-### 3.1 In-Scope Functionality
+### 3.1 In-Scope Functionality (MVP)
 
-The project will deliver a platform with the following core features:
+The MVP will focus on the following core modules and features:
 
-*   **Patient Portal:**
-    *   Secure patient login and profile management.
-    *   Appointment scheduling and management.
-*   **Practice Management:**
-    *   User roles and permissions for different staff levels (Super Admin, Provider, Clinical Staff, Practice Manager, etc.).
-    *   Centralized patient information management.
-*   **Call Center / PBX Integration:**
-    *   Integration with a phone system (e.g., RingCentral, Weave) to provide call pop-ups with patient details for incoming calls.
-    *   Call queueing and recording features.
-*   **Review & Reputation Management:**
-    *   Automated SMS/email campaigns to solicit patient reviews after visits.
-    *   Integration with Google and Facebook for review management.
-*   **Marketing Automation:**
-    *   Functionality to send email/SMS blasts and newsletters to the patient base.
-*   **Insurance Eligibility Verification:**
-    *   Real-time API integration to check patient insurance eligibility.
-*   **AI-Powered Features (High-Level):**
-    *   Exploration and implementation of AI for smart scheduling, predictive analytics, and workflow automation (specific use cases to be finalized with Dr. Osman).
+*   **Platform:**
+    *   Multi-tenant architecture.
+    *   Secure user authentication and role-based access control for all user types.
+*   **Patient Module:**
+    *   Self-registration, profile management.
+    *   Ability to find doctors and book/pay for appointments.
+    *   Telehealth session capabilities (using Agora).
+    *   Read-only access to their EHR.
+*   **Doctor Module:**
+    *   Invitation-based onboarding.
+    *   Profile and availability management.
+    *   EHR access (create/edit notes).
+    *   Telehealth and e-prescribing (using RxNorm for drug list).
+*   **Hospital Admin Module:**
+    *   Hospital onboarding and configuration.
+    *   Doctor and staff management.
+    *   Appointment oversight.
+    *   Custom booking link generation and basic analytics.
+*   **Super Admin Module:**
+    *   Hospital and subscription management.
+    *   High-level dashboard and user activity logs.
 
-### 3.2 Out-of-Scope
+### 3.2 Post-MVP Functionality
 
-*   Billing and financial accounting systems (unless specified otherwise).
-*   Integration with specific Electronic Health Record (EHR) systems not explicitly mentioned in the requirements.
-*   Hardware procurement and setup (e.g., servers, workstations).
+The following features, while part of the overall vision, will be further defined and prioritized for implementation after the initial MVP launch:
+
+*   Advanced AI Use Cases (beyond basic smart scheduling).
+*   Comprehensive Review Management System.
+*   Full-scale Call Center / PBX Integration.
+*   Advanced reporting and analytics.
 
 ## 4. Stakeholders
 
-*   **Dr. Osman:** Project Sponsor, final decision-maker on scope and budget.
-*   **Salman:** Client-side Project Lead, primary point of contact for requirements and business validation.
-*   **[Development Team Name]:** Technology partner responsible for discovery, design, development, testing, and deployment.
-    *   **Numan:** Business Analyst / Discovery Lead
-    *   **Irtaza:** Product Manager (Post-Discovery)
-    *   **Hamzah / Bilal:** Technical Leadership
-*   **Patients:** End-users of the patient-facing components of the platform.
-*   **Practice Staff (Admins, Agents, Providers):** End-users of the internal management components.
+*   **Dr. Osman:** Project Sponsor
+*   **Salman:** Client-side Project Lead
+*   **Muhammad Hamza:** Vendor-side Project Lead
+*   **Patients, Doctors, Hospital Staff:** End-users
+*   **[Development Team Name]:** Technology Partner
 
-## 5. High-Level Timeline & Milestones
+## 5. High-Level Timeline & Milestones (MVP Focus)
 
-This timeline is preliminary and will be refined in the detailed Project Plan.
-
-*   **Discovery Phase (2 Weeks):**
-    *   **Milestone:** Finalized Requirements Document, User Stories, and initial Wireframes. Revised, detailed project plan and proposal.
-*   **Design & Architecture (1-2 Weeks):**
-    *   **Milestone:** Approved Technical Architecture and UI/UX Prototypes.
-*   **Development Sprints (Multiple, TBD):**
-    *   **Milestone:** Delivery of functional modules at the end of each sprint, demonstrated to stakeholders.
-*   **UAT & Testing (1-2 Weeks):**
-    *   **Milestone:** Client sign-off on tested functionalities.
-*   **Go-Live & Training (1 Week):**
-    *   **Milestone:** Platform deployed to production. Staff and user training completed.
-*   **Post-Launch Support (Ongoing):**
-    *   **Milestone:** Stable production environment and smooth transition to the support team.
+*   **Discovery & Design:** [Start Date] - [End Date]
+    *   **Milestone:** Finalized requirements, detailed project plan, and approved UI/UX prototypes.
+*   **Development Sprints (Agile):** [Start Date] - [End Date]
+    *   **Milestone:** Bi-weekly demos of functional modules.
+*   **UAT & Testing:** [Start Date] - [End Date]
+    *   **Milestone:** Client sign-off on MVP features.
+*   **MVP Go-Live:** **September 1st**
+    *   **Milestone:** Platform deployed to production with the first hospital tenant onboarded.
 
 ## 6. Assumptions & Constraints
 
-*   **Assumption:** Client stakeholders (Salman, Dr. Osman) will be available for timely feedback and decisions, especially during the discovery phase.
-*   **Assumption:** Access to necessary APIs and documentation for third-party integrations (RingCentral/Weave, Google, Facebook, Insurance Verification Service) will be provided.
-*   **Constraint:** The initial budget and timeline will be based on the scope defined herein. Significant changes will require a formal change request process.
+*   **Assumption:** The September 1st deadline is for the core MVP features as defined. Additional requirements will be scheduled post-launch.
+*   **Assumption:** Client stakeholders will be available for rapid feedback to meet the aggressive timeline.
+*   **Constraint:** The initial development will focus on web applications for admin roles and responsive web/mobile web for patient and doctor portals. Native mobile apps are post-MVP.
+*   **Constraint:** The requirements are subject to a final version expected by July 16, 2025. Any significant changes after this date may impact the MVP timeline.
 
 ## 7. Project Approval
 
-This charter authorizes the team to proceed with the Discovery Phase.
+This charter authorizes the team to proceed with the Discovery and Design phase for the Mediverse MVP.
 
 **Approved by:**
 
