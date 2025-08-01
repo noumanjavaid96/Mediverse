@@ -52,6 +52,6 @@ graph TD
     C -- No --> F[Log call without patient info];
     subgraph After Call
     G[Call ends] --> H[Log call with duration, agent name, and notes];
-    H --> I[Store call recording link HIPAA compliant];
+    H --> I[Store call recording link (HIPAA compliant)];
     end
 ```
