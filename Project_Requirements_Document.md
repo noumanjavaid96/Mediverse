@@ -39,19 +39,22 @@ This document outlines the project requirements for the Mediverse Telehealth Pla
 *   **Invoice-Based Billing:** The system will be able to generate invoices for large hospitals.
 *   **Stripe Integration:** The platform will be integrated with Stripe to process patient co-pays.
 
-### 2.6. Post-MVP Features
+### 2.6. Role-Based Access Control (RBAC)
 
-*   **Role-Based Access Control (RBAC):** The platform will have a robust RBAC system to ensure that users only have access to the features and data that are relevant to their role.
+*   The platform will have a robust RBAC system to ensure that users only have access to the features and data that are relevant to their role.
+
+### 2.7. Post-MVP Features
+
 *   **Multiple Delegation Levels:** Users will be able to delegate their responsibilities to other users.
 
-### 2.7. Call Center/PBX Integration
+### 2.8. Call Center/PBX Integration
 
 *   **Phase 1 Use Cases:** Call Logging & Contextual Notes.
 *   **Real-Time Popups:** Doctors and Hospital Admins will receive real-time popups.
 *   **Call Logging:** All calls will be logged automatically, in compliance with HIPAA.
 *   **Call Recording:** Call recording will be included in the MVP, in compliance with HIPAA.
 
-### 2.8. Review Management System
+### 2.9. Review Management System
 
 *   **Review Collection:** Reviews will be collected per doctor and per hospital.
 *   **External Publication:** The possibility of publishing reviews externally will be considered for a future release.
