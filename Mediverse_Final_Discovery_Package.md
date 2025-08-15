@@ -22,46 +22,9 @@ The patient's interaction with the platform will follow a clear and intuitive pa
 3.  **Book:** The patient selects an available time slot and books their appointment.
 4.  **Manage:** The patient uses their personal dashboard to manage their appointments, view their health records, and update their profile. If a doctor requests to reschedule an appointment, the patient receives a notification and has the final decision to either accept the proposed new time or to reschedule for a different time that is convenient for them.
 
-<h4>Search Page</h4>
-<img src="https://i.imgur.com/8YV45N2.png" alt="Search Page" width="800">
-
-<h4>Doctor Profile</h4>
-<img src="https://i.imgur.com/R0i2aH2.png" alt="Doctor Profile" width="800">
-
-<h4>Booking Flow</h4>
-<img src="https://i.imgur.com/sZ3g4v4.png" alt="Booking Flow" width="800">
-
-<h4>Patient Dashboard</h4>
-<img src="https://i.imgur.com/3v2u2Y0.png" alt="Patient Dashboard" width="800">
-
-<h4>Feedback Form</h4>
-<img src="https://i.imgur.com/Y2i2aH2.png" alt="Feedback Form" width="800">
-
-<h4>Embedded E-Prescribing (Failsafe UI)</h4>
-<p>This mockup demonstrates how a third-party e-prescribing service (e.g., DoseSpot) could be embedded within the Mediverse application. The patient maintains context with the Mediverse header and navigation, while interacting with the external service in an iframe.</p>
-<img src="https://i.imgur.com/5E6wJ4B.png" alt="Embedded E-Prescribing" width="800">
-
 ### 2.2. Doctor Journey
 
-<h4>Profile Management</h4>
-<img src="https://i.imgur.com/2o3k4vV.png" alt="Profile Management" width="800">
-
-<h4>Schedule Management</h4>
-<img src="https://i.imgur.com/7u5i2N1.png" alt="Schedule Management" width="800">
-
-<h4>Appointment Calendar</h4>
-<img src="https://i.imgur.com/g8f4H2o.png" alt="Appointment Calendar" width="800">
-
 ### 2.3. Super Admin Journey
-
-<h4>Doctor Onboarding</h4>
-<img src="https://i.imgur.com/4o5k6vV.png" alt="Doctor Onboarding" width="800">
-
-<h4>Platform Management</h4>
-<img src="https://i.imgur.com/9u7i2N1.png" alt="Platform Management" width="800">
-
-<h4>Reporting Dashboard</h4>
-<img src="https://i.imgur.com/f8g4H2o.png" alt="Reporting Dashboard" width="800">
 
 ---
 
